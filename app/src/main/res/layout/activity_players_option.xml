@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.my.bottalgame.PlayersOption">
+
+    <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Players Option"
+            android:textSize="40sp"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Players To Play"
+        android:textSize="20sp"
+        android:layout_marginLeft="13dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:layout_marginTop="90dp"
+
+        />
+
+        <RadioGroup
+            android:id="@+id/rg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="125dp"
+            android:padding="10dp"
+
+            >
+
+            <RadioButton
+                android:layout_marginLeft="-140dp"
+                android:id="@+id/rd1"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:layout_width="wrap_content"
+                android:text="ONE"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif"
+                />
+
+            <RadioButton
+                android:id="@+id/rd2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-62dp"
+                android:layout_marginTop="-40dp"
+                android:fontFamily="sans-serif"
+                android:text="TWO"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <RadioButton
+                android:id="@+id/rd3"
+                android:layout_height="40dp"
+                android:layout_width="wrap_content"
+                android:text="THREE"
+                android:layout_marginTop="-40dp"
+                android:layout_marginLeft="32dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif"
+                />
+
+            <RadioButton
+                android:id="@+id/rd4"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="122dp"
+                android:layout_marginTop="-40dp"
+                android:fontFamily="sans-serif"
+                android:text="FOUR"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Players Names"
+        android:textSize="20sp"
+        android:layout_marginLeft="13dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:layout_marginTop="210dp"
+
+        />
+        <EditText
+                android:background="@drawable/boxdesign"
+                android:id="@+id/p1"
+                android:layout_height="40dp"
+                android:layout_width="230dp"
+                android:fontFamily="casual"
+                android:textSize="20sp"
+                android:paddingLeft="7dp"
+                android:layout_marginTop="270dp"
+                android:layout_marginLeft="20dp"
+                android:hint="Player-1 Name"
+            />
+        <EditText
+            android:background="@drawable/boxdesign"
+            android:id="@+id/p2"
+            android:enabled="false"
+            android:layout_height="40dp"
+            android:layout_width="230dp"
+            android:fontFamily="casual"
+            android:textSize="20sp"
+            android:paddingLeft="7dp"
+            android:layout_marginTop="320dp"
+            android:layout_marginLeft="20dp"
+            android:hint="Player-2 Name"
+            />
+    <EditText
+        android:background="@drawable/boxdesign"
+        android:id="@+id/p3"
+        android:layout_height="40dp"
+        android:layout_width="230dp"
+        android:fontFamily="casual"
+        android:textSize="20sp"
+        android:paddingLeft="7dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Player-3 Name"
+        android:enabled="false"
+        />
+    <EditText
+        android:background="@drawable/boxdesign"
+        android:id="@+id/p4"
+        android:layout_height="40dp"
+        android:layout_width="230dp"
+        android:fontFamily="casual"
+        android:textSize="20sp"
+        android:paddingLeft="7dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Player-4 Name"
+        android:enabled="false"
+        />
+
+
+    <com.varunest.sparkbutton.SparkButton
+        android:id="@+id/playbtn"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        app:sparkbutton_activeImage="@drawable/notplay"
+        app:sparkbutton_inActiveImage="@drawable/play"
+        app:sparkbutton_iconSize="250dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="60dp"
+        app:sparkbutton_primaryColor="@color/primary_color"
+        app:sparkbutton_secondaryColor="@color/second_color" />
+
+</RelativeLayout>
